@@ -1,0 +1,13 @@
+prn      pid            pname          ave     cut    c  psmile                                                       
+-------  -------------  -------------  ------  -----  -  -------------------------------------------------------------
+36864    CHEMBL727      THIOGUANINE    8.35    15.68  6  Nc1nc2[nH]cnc2c(=S)[nH]1                                     
+255477   CHEMBL1294     QUINIDINE      9.64    18.16  6  C=C[C@H]1CN2CC[C@H]1C[C@@H]2[C@@H](O)c1ccnc2ccc(OC)cc12      
+67010    CHEMBL865      VALDECOXIB     10.32   11.46  6  Cc1onc(-c2ccccc2)c1-c1ccc(S(N)(=O)=O)cc1                     
+338934   CHEMBL1401     NITAZOXANIDE   10.78   19.22  6  CC(=O)Oc1ccccc1C(=O)Nc1ncc([N+](=O)[O-])s1                   
+1243552  CHEMBL1902981  EPERISONE      10.88   19.78  6  CCc1ccc(C(=O)C(C)CN2CCCCC2)cc1                               
+29005    CHEMBL680      CEFACLOR       11.37   19.42  6  N[C@@H](C(=O)N[C@@H]1C(=O)N2C(C(=O)O)=C(Cl)CS[C@H]12)c1ccccc1
+250908   CHEMBL1282     IMIQUIMOD      13.845  20.99  6  CC(C)Cn1cnc2c(N)nc3ccccc3c21                                 
+2080     CHEMBL36       PYRIMETHAMINE  14.07   14.27  6  CCc1nc(N)nc(N)c1-c1ccc(Cl)cc1                                
+70795    CHEMBL295619   RUFLOXACIN     15.65   24.23  6  CN1CCN(c2c(F)cc3c(=O)c(C(=O)O)cn4c3c2SCC4)CC1                
+912049   CHEMBL1488165  PIDOTIMOD      16.02   19.16  6  O=C1CC[C@@H](C(=O)N2CSC[C@H]2C(=O)O)N1                       
+418436   CHEMBL442444   DROFENINE      18.625  24.83  6  CCN(CC)CCOC(=O)C(c1ccccc1)C1CCCCC1                           

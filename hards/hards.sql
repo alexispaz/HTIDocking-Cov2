@@ -65,8 +65,12 @@ CREATE TABLE hards AS
 	FROM data2 a JOIN data2 b
 	ON a.prn = b.prn AND a.ref != b.ref;
 
-	-- ON (a.prn = b.prn OR a.name = b.name COLLATE NOCASE) AND a.ref != b.ref;
-
+-- NOTE: a.ref != b.ref in self join gives duplicate entrees:
+-- i.e. row i of a with row j of b will also be found as row j of a and row i of b.
+-- However, I find this way usefull to concat all names and ids below.
+-- I other words, using something like a.ref > b.ref will print only one
+-- entree, but a first concat will be needed to avoid loose information and
+-- then concat below will have repeated name/ids.
 
 -- Getting HARDs using 2 ref and for different cut
 
@@ -84,12 +88,11 @@ CREATE TABLE hards2 AS
 -- Getting HARDs using 3 ref and for different cut
 
 CREATE VIEW hards3 AS
-SELECT  prn, pid, pname,
-        GROUP_CONCAT(DISTINCT id) id, 
-        name,
-        GROUP_CONCAT(cut) cut2, ave,
+SELECT  prn, pid, pname, ave,
         MAX(cut) cut, COUNT(*) c, psmile
-  FROM hards2
+  FROM hards
 	GROUP BY prn
-  HAVING c>1;
+  HAVING c>2;
+
+-- NOTE: using c>2 to skip repeated entrees from self join (see previous note)
 
