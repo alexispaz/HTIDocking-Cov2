@@ -24,18 +24,20 @@ WHERE (a.doc_id='110267' and a.standard_type = 'Hit score')
   or  (a.doc_id='110246' and a.standard_type = 'Inhibition') 
   or  (a.doc_id='110230' and a.standard_type = 'Inhibition index');
 
--- Add column with CHEMBL IDs of the parent compound	
+-- Add column with CHEMBL IDs, smile and name of the parent compound	
 
 ALTER TABLE h.data ADD COLUMN pid TEXT;
+ALTER TABLE h.data ADD COLUMN pname TEXT;
 UPDATE h.data 
-  SET pid = m.chembl_id
-  FROM (SELECT chembl_id, molregno FROM molecule_dictionary) m
+  SET pid = m.chembl_id,
+      pname = m.pref_name
+  FROM molecule_dictionary m
 	WHERE prn = m.molregno;
  
 ALTER TABLE h.data ADD COLUMN psmile TEXT;
 UPDATE h.data 
-  SET psmile = m.smile
-  FROM (SELECT canonical_smiles smile, molregno FROM compound_structures) m
+  SET psmile = m.canonical_smiles
+  FROM compound_structures m
 	WHERE prn = m.molregno;
  
 -- Truncate column for better visualization	

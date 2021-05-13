@@ -17,7 +17,7 @@ HAVING c>1 and
 -- Rank drugs per ref using the values
 
 CREATE TABLE data2 AS
-SELECT ref, prn, pid,
+SELECT ref, prn, pid, pname,
        GROUP_CONCAT(DISTINCT psmile) psmile,
        GROUP_CONCAT(DISTINCT id) id,
        GROUP_CONCAT(DISTINCT name) name,
@@ -55,7 +55,7 @@ UPDATE data2
 CREATE TABLE hards AS
 	SELECT 
         (CASE WHEN a.ref<b.ref THEN a.ref||b.ref ELSE b.ref||a.ref END) ref, 
-        a.prn prn, a.pid pid, a.psmile psmile,
+        a.prn prn, a.pid pid, a.psmile psmile, a.pname pname,
         a.id id,
         a.name name,
         a.value||','||b.value value,
@@ -71,7 +71,7 @@ CREATE TABLE hards AS
 -- Getting HARDs using 2 ref and for different cut
 
 CREATE TABLE hards2 AS
-  SELECT ref, prn, pid,
+  SELECT ref, prn, pid, pname,
          GROUP_CONCAT(DISTINCT id) id,
          GROUP_CONCAT(DISTINCT name) name,
          value,
@@ -84,7 +84,7 @@ CREATE TABLE hards2 AS
 -- Getting HARDs using 3 ref and for different cut
 
 CREATE VIEW hards3 AS
-SELECT  prn, pid,
+SELECT  prn, pid, pname,
         GROUP_CONCAT(DISTINCT id) id, 
         name,
         GROUP_CONCAT(cut) cut2, ave,
