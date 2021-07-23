@@ -1,16 +1,22 @@
 # SARS-Cov-2 publication data repository
 
-This is a data repository to support the main publication 
+This is a data repository to support the main work 
 
-> "Virtual high-throughput screening inverse docking of highly active repurpose
-  drugs against SARS-CoV-2". S. Ribone, S. A. Paz, C. F. Abrams, M. Villareal.
-  XXXXXXXXXX, XX (2021) XX. doi: XXXXX
+> "Target identification for repurposed drugs active against SARS-CoV-2 via
+> high-throughput inverse docking". S. Ribone, S. A. Paz, C. F. Abrams, M.
+> Villareal.
+
+A preprint of this publication can be found at ChemRxiv, DOI:
+[10.33774/chemrxiv-2021-2n6jh](https://doi.org/10.33774/chemrxiv-2021-2n6jh).
 
 # Content
 
-Inside `hards` folder you can find the scripts used to obtain by the high
-active repurpoused drugs (HARDs) list following the procedure explained in the
-main publication.
+In folder `structures/` you can find the protein structures and docking boxes
+used in the publication.
+
+Inside `hards/` folder you can find the scripts used to obtain by the high
+active repurpoused drugs (HARDs) list, following the procedure explained in
+the main publication.
 
 In folder `hards/output_27/` you can find the HARDs lists and other data
 obtained from this scripts.
@@ -58,9 +64,43 @@ Scripts in `hards/` are covered by a `BSD 2-Clause` License. See
 
 Please cite this repository and the main publication as:
 
-> "Virtual high-throughput screening inverse docking of highly active repurpose
-  drugs against SARS-CoV-2". S. Ribone, S. A. Paz, C. F. Abrams, M. Villareal.
-  XXXXXXXXXX, XX (2021) XX. doi: XXXXX
+> "Target identification for repurposed drugs active against SARS-CoV-2 via
+> high-throughput inverse docking - data repository". S. Ribone, S. A. Paz, C. F. Abrams, M.
+> Villareal. GitHub (2021). https://github.com/alexispaz/VIrtualHTS-Cov2
 
+> "Target identification for repurposed drugs active against SARS-CoV-2 via
+> high-throughput inverse docking". S. Ribone, S. A. Paz, C. F. Abrams, M.
+> Villareal. ChemRxiv, Cambridge: Cambridge Open Engage, (2021). This content
+> is a preprint and has not been peer-reviewed. DOI: 10.33774/chemrxiv-2021-2n6jh.
 
+# Authors' affiliations
 
+* **Sergio P. Ribone**
+
+  * Universidad Nacional de Córdoba. Facultad de Ciencias Quíimicas. 
+  Departamento de Ciencias Farmacéuticas. Córdoba (X5000HUA), Argentina.
+
+  * Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET), Unidad de
+  Investigación y Desarrollo en Tecnología Farmacéutica (UNITEFA), Córdoba
+  (X5000HUA), Argentina.
+
+* **S. Alexis Paz**
+
+  * Universidad Nacional de Córdoba. Facultad de Ciencias Quíimicas. 
+  Departamento de Química Teórica y Computacional. Córdoba (X5000HUA), Argentina.
+
+  * Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET), Instituto
+  de Fisicoquímica de Córdoba (INFIQC), Córdoba (X5000HUA), Argentina.
+
+* **Cameron F. Abrams**
+
+  * Department of Chemical and Biological Engineering, Drexel University,
+  Philadelphia, PA 19104, United States.
+ 
+* **Marcos A. Villarreal**
+
+  * Universidad Nacional de Córdoba. Facultad de Ciencias Quíimicas. 
+  Departamento de Química Teórica y Computacional. Córdoba (X5000HUA), Argentina.
+
+  * Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET), Instituto
+  de Fisicoquímica de Córdoba (INFIQC), Córdoba (X5000HUA), Argentina.
