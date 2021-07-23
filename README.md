@@ -1,4 +1,4 @@
-# SARS-Cov-2 publication data repository
+# High-Throughput Inverse Docking of SARS-Cov-2
 
 This is a data repository to support the main work 
 
@@ -11,8 +11,8 @@ A preprint of this publication can be found at ChemRxiv, DOI:
 
 # Content
 
-In folder `structures/` you can find the protein structures and docking boxes
-used in the publication.
+In folder `structures/` you can find the protein structures used in the
+publication.
 
 Inside `hards/` folder you can find the scripts used to obtain by the high
 active repurpoused drugs (HARDs) list, following the procedure explained in
@@ -64,9 +64,8 @@ Scripts in `hards/` are covered by a `BSD 2-Clause` License. See
 
 Please cite this repository and the main publication as:
 
-> "Target identification for repurposed drugs active against SARS-CoV-2 via
-> high-throughput inverse docking - data repository". S. Ribone, S. A. Paz, C. F. Abrams, M.
-> Villareal. GitHub (2021). https://github.com/alexispaz/VIrtualHTS-Cov2
+> "High-Throughput Inverse Docking of SARS-Cov-2". S. Ribone, S. A. Paz, C.
+> F. Abrams, M.  Villareal. GitHub (2021). https://github.com/alexispaz/HTIDocking-Cov2
 
 > "Target identification for repurposed drugs active against SARS-CoV-2 via
 > high-throughput inverse docking". S. Ribone, S. A. Paz, C. F. Abrams, M.
